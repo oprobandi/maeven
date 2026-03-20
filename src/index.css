@@ -148,12 +148,28 @@ body {
   .cat-span { grid-column: span 1 !important; }
 }
 
+/* ── Product image container ── */
+/* aspect-ratio set here so it can be overridden per breakpoint */
+.product-img {
+  aspect-ratio: 3 / 4;
+  cursor: pointer;
+}
+
 /* ── Responsive product grid ── */
 @media (max-width: 900px) {
   .product-grid { grid-template-columns: repeat(2,1fr) !important; }
 }
 @media (max-width: 560px) {
   .product-grid { grid-template-columns: 1fr !important; }
+  /* Shorter cards on small mobile — less scrolling */
+  .product-img  { aspect-ratio: 3 / 3.6 !important; }
+}
+
+/* ── Desktop: filter controls stack on narrow, inline on wide ── */
+@media (max-width: 640px) {
+  .filter-controls { width: 100% !important; }
+  .filter-controls input  { width: 100% !important; }
+  .filter-controls select { width: 100% !important; }
 }
 
 /* ── Responsive brand story ── */
@@ -179,4 +195,10 @@ body {
 @media (max-width: 768px) {
   .section-pad  { padding: 60px 24px !important; }
   .lookbook-pad { padding: 60px 0 60px 24px !important; }
+}
+
+/* ── Desktop: constrain section content width for breathing room ── */
+@media (min-width: 1280px) {
+  .section-pad { padding-left: max(48px, calc((100vw - 1300px) / 2)) !important;
+                 padding-right: max(48px, calc((100vw - 1300px) / 2)) !important; }
 }

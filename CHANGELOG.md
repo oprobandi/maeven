@@ -6,6 +6,30 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.2.1] — 2026-03-20
+
+### Summary
+Targeted patch. Fixes disappearing product images permanently. Improves desktop
+product grid layout. Adds image placeholder so blank loading states are graceful.
+
+### Fixed
+- **Disappearing images (critical)** — replaced all backgroundImage CSS divs in
+  ProductCard with real <img> tags and loading="lazy". Browser now only requests
+  images when they approach the viewport. No more Unsplash rate limiting.
+- Image onError fallback: failed images show a warm beige placeholder, never blank
+- Desktop filter bar: heading + controls now sit in a single well-spaced row
+- Desktop section max-width capped at 1300px with auto side margins on wide screens
+
+### Changed
+- ProductCard: backgroundImage → <img> with loading="lazy" + onError handler
+- ProductGrid: filter bar layout refactored — heading left, dropdowns right, tabs below
+- ProductGrid: max-width 1200px container with centered auto margins
+- Select dropdown: custom SVG chevron replacing default browser arrow
+- index.css: .product-img class for consistent aspect ratio across breakpoints
+- index.css: desktop padding uses max() to add breathing room above 1280px
+
+---
+
 ## [1.2.0] — 2026-03-20
 
 ### Summary
