@@ -118,13 +118,14 @@ body {
 }
 
 /* ── Responsive nav ── */
+/* ── Responsive nav v1.2 ── */
 @media (max-width: 768px) {
-  .nav-links-desktop { display: none !important; }
-  .hamburger-btn     { display: flex !important; }
-  .nav-size-guide    { display: none !important; }
+  .nav-links-desktop  { display: none !important; }
+  .nav-icons-desktop  { display: none !important; }
+  .nav-mobile-right   { display: flex !important; }
 }
 @media (min-width: 769px) {
-  .hamburger-btn { display: none !important; }
+  .nav-mobile-right   { display: none !important; }
 }
 
 /* ── Responsive hero ── */
@@ -165,12 +166,13 @@ body {
   .testi-grid { grid-template-columns: 1fr !important; }
 }
 
-/* ── Responsive footer ── */
+/* ── Responsive footer v1.2 ── */
 @media (max-width: 768px) {
-  .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  .footer-nav-desktop { display: none !important; }
+  .footer-nav-mobile  { display: block !important; }
 }
-@media (max-width: 480px) {
-  .footer-grid { grid-template-columns: 1fr !important; }
+@media (min-width: 769px) {
+  .footer-nav-mobile  { display: none !important; }
 }
 
 /* ── Responsive section padding ── */

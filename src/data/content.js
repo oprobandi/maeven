@@ -10,31 +10,31 @@ export const LOOKBOOK = [
     id: 1,
     title: "L'Échappée Belle",
     issue: "No. 04",
-    img: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=75&w=1000&fm=webp",
   },
   {
     id: 2,
     title: "Quiet Revolution",
     issue: "No. 05",
-    img: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=75&w=1000&fm=webp",
   },
   {
     id: 3,
     title: "Modernist Form",
     issue: "No. 06",
-    img: "https://images.unsplash.com/photo-1537907690979-ee8e01276184?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1537907690979-ee8e01276184?q=75&w=1000&fm=webp",
   },
   {
     id: 4,
     title: "Eternal Summer",
     issue: "No. 07",
-    img: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=75&w=1000&fm=webp",
   },
   {
     id: 5,
     title: "The Silk Road",
     issue: "No. 08",
-    img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=75&w=1000&fm=webp",
   },
 ];
 
@@ -44,22 +44,22 @@ export const CATEGORIES = [
   {
     label: "New Arrivals",
     span: true,
-    img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=75&w=1000&fm=webp",
   },
   {
     label: "Dresses",
     span: false,
-    img: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=75&w=1000&fm=webp",
   },
   {
     label: "Outerwear",
     span: false,
-    img: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=75&w=1000&fm=webp",
   },
   {
     label: "Essentials",
     span: false,
-    img: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1200",
+    img: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=75&w=1000&fm=webp",
   },
 ];
 

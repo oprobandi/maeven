@@ -6,6 +6,29 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.2.0] — 2026-03-20
+
+### Summary
+Mobile navbar overlap fixed. Logo moved left. Footer stripped to 5 links with
+mobile accordion. WhatsApp bubble replaced with minimal text trigger. Proper
+brand SVG icons. Image load optimised. Termux workflow documented.
+
+### Added
+- `docs/TERMUX-WORKFLOW.md` — full Termux guide
+- Mobile footer accordion (5 collapsible sections)
+- OG meta tags in `index.html`
+- Contact panel (WhatsApp + Email slide-up)
+
+### Changed
+- Navbar: logo LEFT, slide-in underline hover, mobile-only bag+hamburger
+- Footer: 20-link grid → 5 inline links + social row
+- WhatsApp: green bubble → minimal "Chat with us" text button
+- Social icons: proper brand SVGs (Instagram, TikTok, Pinterest, Twitter/X)
+- All Unsplash images: `&q=75&fm=webp` — ~60% smaller payloads
+- Scroll listener: `{ passive: true }` for mobile performance
+
+---
+
 ## [1.1.0] — 2026-03-20
 
 ### Summary
